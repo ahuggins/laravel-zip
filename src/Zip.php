@@ -350,6 +350,15 @@ class Zip {
     }
 
     /**
+     * Get an SplFileObject for the zip file
+     * @return SplFileObject
+     */
+    public function getFileObject()
+    {
+        return new \SplFileObject($this->zip_file);
+    }
+
+    /**
      * Get a list of files in archive (array)
      *
      * @return  array
